@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/semantic.min.css">
+        <link rel="stylesheet" href="css/myStyle.css">
+
+    <title>Chess Game</title>
+
+    </head>
+    <body>
+    <div class="container">
+        <div id="bID" class="row board">
+            <div class="col-xs-12 myBoard">
+
+                <div id="sort1" class="row">
+                    <div id="h1" onclick="" class="col-xs-1 white"> <div id="b-1-r" class="newSize"><img class="imgSize b rok" src="Images/bRok.png"></div></div>
+                    <div id="g1" onclick="" class="col-xs-1 black"> <div id="b-1-n" class="newSize"><img class="imgSize b night" src="Images/bNight.png"></div></div>
+                    <div id="f1" onclick="" class="col-xs-1 white"> <div id="b-1-b" class="newSize"><img class="imgSize b bishop" src="Images/bBishop.png"></div></div>
+                    <div id="e1" onclick="" class="col-xs-1 black"> <div id="b-a-q" class="newSize"><img class="imgSize b queen" src="Images/bQueen.png"></div></div>
+                    <div id="d1" onclick="" class="col-xs-1 white"> <div id="b-a-king" class="newSize"><img class="imgSize b king" src="Images/bKing.png"></div></div>
+                    <div id="c1" onclick="" class="col-xs-1 black"> <div id="b-2-b" class="newSize"><img class="imgSize b bishop" src="Images/bBishop.png"></div></div>
+                    <div id="b1" onclick="" class="col-xs-1 white"> <div id="b-2-n" class="newSize"><img class="imgSize b night" src="Images/bNight.png"></div></div>
+                    <div id="a1" onclick="" class="col-xs-1 black"> <div id="b-2-r" class="newSize"><img class="imgSize b rok" src="Images/bRok.png"></div></div>
+                </div>
+
+                <div id="sort2" class="row">
+                    <div id="h2" class="col-xs-1 black"> <div id="b-1-p" class="newSize p"><img class="imgSize b pone" src="Images/bPone.png"></div></div>
+                    <div id="g2" class="col-xs-1 white"> <div id="b-2-p" class="newSize p"><img class="imgSize b pone" src="Images/bPone.png"></div></div>
+                    <div id="f2" class="col-xs-1 black">  <div id="b-3-p" class="newSize p"><img class="imgSize b pone" src="Images/bPone.png"></div></div>
+                    <div id="e2" class="col-xs-1 white"> <div id="b-4-p" class="newSize p"><img class="imgSize b pone" src="Images/bPone.png"></div></div>
+                    <div id="d2" class="col-xs-1 black"> <div id="b-5-p" class="newSize p"><img class="imgSize b pone" src="Images/bPone.png"></div></div>
+                    <div id="c2" class="col-xs-1 white"> <div id="b-6-p" class="newSize p"><img class="imgSize b pone" src="Images/bPone.png"></div></div>
+                    <div id="b2" class="col-xs-1 black"> <div id="b-7-p" class="newSize p"><img class="imgSize b pone" src="Images/bPone.png"></div></div>
+                    <div id="a2" class="col-xs-1 white"> <div id="b-8-p" class="newSize p"><img class="imgSize b pone" src="Images/bPone.png"></div></div>
+                </div>
+
+                <div class="row">
+                    <div id="h3"  class="col-xs-1 white"></div>
+                    <div id="g3"  class="col-xs-1 black"></div>
+                    <div id="f3"  class="col-xs-1 white"></div>
+                    <div id="e3"  class="col-xs-1 black"></div>
+                    <div id="d3"  class="col-xs-1 white"></div>
+                    <div id="c3"  class="col-xs-1 black"></div>
+                    <div id="b3"  class="col-xs-1 white"></div>
+                    <div id="a3"  class="col-xs-1 black"></div>
+                </div>
+
+                <div class="row">
+                    <div id="h4"  class="col-xs-1 black"></div>
+                    <div id="g4"  class="col-xs-1 white"></div>
+                    <div id="f4"  class="col-xs-1 black"></div>
+                    <div id="e4"  class="col-xs-1 white"></div>
+                    <div id="d4"  class="col-xs-1 black"></div>
+                    <div id="c4"  class="col-xs-1 white"></div>
+                    <div id="b4"  class="col-xs-1 black"></div>
+                    <div id="a4"  class="col-xs-1 white"></div>
+                </div>
+
+                <div class="row">
+                    <div id="h5" class="col-xs-1 white"></div>
+                    <div id="g5" class="col-xs-1 black"></div>
+                    <div id="f5" class="col-xs-1 white"></div>
+                    <div id="e5" class="col-xs-1 black"></div>
+                    <div id="d5" class="col-xs-1 white"></div>
+                    <div id="c5" class="col-xs-1 black"></div>
+                    <div id="b5" class="col-xs-1 white"></div>
+                    <div id="a5" class="col-xs-1 black"></div>
+                </div>
+
+                <div class="row">
+                    <div id="h6" class="col-xs-1 black"></div>
+                    <div id="g6" class="col-xs-1 white"></div>
+                    <div id="f6" class="col-xs-1 black"></div>
+                    <div id="e6" class="col-xs-1 white"></div>
+                    <div id="d6" class="col-xs-1 black"></div>
+                    <div id="c6" class="col-xs-1 white"></div>
+                    <div id="b6" class="col-xs-1 black"></div>
+                    <div id="a6" class="col-xs-1 white"></div>
+                </div>
+
+                <div class="row">
+                    <div id="h7" class="col-xs-1 white"><div id="w-1-p" class="newSize p"><img class="imgSize w pone" src="Images/wPone.png"></div></div>
+                    <div id="g7" class="col-xs-1 black"><div id="w-2-p" class="newSize p"><img class="imgSize w pone" src="Images/wPone.png"></div></div>
+                    <div id="f7" class="col-xs-1 white"><div id="w-3-p" class="newSize p"><img class="imgSize w pone" src="Images/wPone.png"></div></div>
+                    <div id="e7" class="col-xs-1 black"><div id="w-4-p" class="newSize p"><img class="imgSize w pone" src="Images/wPone.png"></div></div>
+                    <div id="d7" class="col-xs-1 white"><div id="w-5-p" class="newSize p"><img class="imgSize w pone" src="Images/wPone.png"></div></div>
+                    <div id="c7" class="col-xs-1 black"><div id="w-6-p" class="newSize p"><img class="imgSize w pone" src="Images/wPone.png"></div></div>
+                    <div id="b7" class="col-xs-1 white"><div id="w-7-p" class="newSize p"><img class="imgSize w pone" src="Images/wPone.png"></div></div>
+                    <div id="a7" class="col-xs-1 black"><div id="w-8-p" class="newSize p"><img class="imgSize w pone" src="Images/wPone.png"></div></div>
+                </div>
+
+                <div class="row">
+                    <div id="h8" class="col-xs-1 black"><div id="w-1-r" class="newSize"><img class="imgSize w rok" src="Images/wRok.png"></div></div>
+                    <div id="g8" class="col-xs-1 white"><div id="w-1-n" class="newSize"><img class="imgSize w night" src="Images/wNight.png"></div></div>
+                    <div id="f8" class="col-xs-1 black"><div id="w-1-b" class="newSize"><img class="imgSize w bishop" src="Images/wBishop.png"></div></div>
+                    <div id="e8" class="col-xs-1 white"><div id="w-a-q" class="newSize"><img class="imgSize w queen" src="Images/wQueen.png"></div></div>
+                    <div id="d8" class="col-xs-1 black"><div id="w-a-king" class="newSize"><img class="imgSize w king" src="Images/wKing.ico"></div></div>
+                    <div id="c8" class="col-xs-1 white"><div id="w-2-b" class="newSize"><img class="imgSize w bishop" src="Images/wBishop.png"></div></div>
+                    <div id="b8" class="col-xs-1 black"><div id="w-2-n" class="newSize"><img class="imgSize w night" src="Images/wNight.png"></div></div>
+                    <div id="a8" class="col-xs-1 white"><div id="w-2-r" class="newSize"><img class="imgSize w rok" src="Images/wRok.png"></div></div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <script src="Js/jquery-3.2.1.min.js"></script>
+    <script src="Js/jquery-ui.js"></script>
+    <script src="Js/semantic.min.js"></script>
+    <script src="Js/controller.js"></script>
+    </body>
+</html>

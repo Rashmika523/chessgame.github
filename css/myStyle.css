@@ -1,0 +1,224 @@
+
+    @media all and (max-width: 575px) {
+
+       body{
+           background-size: 575px 480px;
+
+       }
+        .board{
+            top: 150px;
+        }
+
+        .newSize{
+            width: 65px;
+            height: 65px;
+        }
+        .board{
+            position: absolute;
+            width: 520px;
+            height: 520px;
+            margin: 25px;
+            border: 20px ridge #808080;
+
+        }
+        .imgSize{
+            width: 100%;
+            height:100%;
+
+        }
+    }
+    @media all and (min-width: 576px) and (max-width: 767px){
+
+        body{
+            background-size: 600px 880px;
+        }
+        .container{
+            top: 050px;
+        }
+        .board{
+            top: 200px;
+        }
+        .newSize{
+            width: 65px;
+            height: 65px;
+        }
+        .board{
+            position: absolute;
+            width: 520px;
+            height: 520px;
+            margin: 25px;
+            border: 20px ridge #808080;
+
+        }
+        .imgSize{
+            width: 100%;
+            height:100%;
+
+        }
+
+    }
+    @media all and (min-width: 768px) and (max-width: 991px){
+
+        body{
+            background-size: 780px 880px;
+        }
+        .container{
+            top: 050px;
+        }
+        .board{
+            top: 150px;
+        }
+        .newSize{
+            width: 65px;
+            height: 65px;
+        }
+        .board{
+            position: absolute;
+            width: 520px;
+            height: 520px;
+            margin: 25px;
+            border: 20px ridge #808080;
+
+        }
+        .imgSize{
+            width: 100%;
+            height:100%;
+
+        }
+
+    }
+    @media all and (min-width: 992px) and (max-width: 1199px){
+
+        body{
+            background-size: 1000px 1000px;
+        }
+        .container{
+            top: 050px;
+        }
+        .board{
+            top: 150px;
+        }
+        .newSize{
+            width: 80px;
+            height: 80px;
+        }
+        .board{
+            position: absolute;
+            width: 680px;
+            height: 680px;
+            margin: 25px;
+            border: 20px ridge #808080;
+
+        }
+        .imgSize{
+            width: 100%;
+            height:100%;
+
+        }
+    }
+body{
+    margin-top: 50px;
+    padding: 0px;
+    margin-left: 0px;
+    background-image: url("../Images/chess2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.black{
+    float: left;
+    vertical-align:middle;
+    width: 80px;
+    height: 80px;
+    /*background-color:  	#D2691E;*/
+    background-color: grey;
+    display: table-cell;
+
+    color: white;
+    text-shadow: black 1px 1px 2px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+.white{
+    float: left;
+    vertical-align:middle;
+    width: 80px;
+    height: 80px;
+    /*background-color: #FFDEAD;*/
+    background-color: #CCC;
+    display: table-cell;
+
+    text-shadow: black 1px 1px 2px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.board{
+    position: absolute;
+    width: 680px;
+    height: 680px;
+    margin: 25px;
+    border: 20px ridge #808080;
+
+}
+.imgSize{
+    width: 100%;
+    height:100%;
+
+}
+.col-xs-12{
+    z-index: 0;
+}
+.rotate {
+    transition-duration: .5s;
+    transition-property: transform;
+    transform: rotate(180deg);
+
+}
+.cross{
+    box-shadow: inset 0px 0px 5px 2px #cc0000;
+}
+
+.rotated {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.rotated2 {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.selected-div{
+    box-shadow: inset 0px 0px 5px 2px #3affff;
+}
+
+.path {
+    box-shadow: inset 0px 0px 5px 2px green;
+}
+.newSize{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    /*background-size: 80px 80px;*/
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    left: 1px;
+    z-index: 1;
+}
